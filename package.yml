@@ -1,15 +1,19 @@
 name       : python-cssutils
-version    : 1.0.2
-release    : 7
+version    : 2.6.0
+release    : 8
 source     :
-    - https://pypi.python.org/packages/source/c/cssutils/cssutils-1.0.2.tar.gz : a2fcf06467553038e98fea9cfe36af2bf14063eb147a70958cfcaa8f5786acaf
+    - https://files.pythonhosted.org/packages/43/d5/505d96b7456fd334f8b963c05bd9425dacd317e209bb9adf103613339325/cssutils-2.6.0.tar.gz : f7dcd23c1cec909fdf3630de346e1413b7b2555936dec14ba2ebb9913bf0818e
 license    : LGPL-3.0-or-later
+homepage   : https://github.com/jaraco/cssutils
 component  : programming.python
 summary    : A CSS Cascading Style Sheets library for Python
 description: |
     A Python package to parse and build CSS Cascading Style Sheets. DOM only, not any rendering facilities!
 builddeps  :
-    - pkgconfig(python3)
+    - python-build
+    - python-installer
+    - python-setuptools-scm
+    - python-wheel
 build      : |
     %python3_setup
 install    : |
